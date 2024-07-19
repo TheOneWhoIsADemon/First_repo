@@ -65,3 +65,36 @@ print(a ^ b)
 
 print(a.union(b))
 print(a | b)
+
+s = "Pryvit"
+print(s.upper())
+
+name = 'Vlados'
+print('Hello, {}!'.format(name))
+
+age = 25
+print('Hello, {}! you are {} yesr old'.format(name, age))
+
+print('Hello, {name}! you are {age} yesr old'.format(name = 'Vladik', age = 17))
+
+print('Hello, {1}! you are {0} yesr old'.format(age, name))
+
+s = 'Hello, World!'
+first_file = s[6:13]
+print(first_file)
+
+nambers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+odd_nambers = nambers[0:10:2]
+print(odd_nambers)
+
+nambers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+even_nambers = nambers[1:10:2]
+print(even_nambers)
+
+nambers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+reversed_nambers = nambers[::-1]
+print(reversed_nambers)
+
+nambers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+copy_nambers = nambers[:]
+print(copy_nambers)
