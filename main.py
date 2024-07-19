@@ -98,3 +98,61 @@ print(reversed_nambers)
 nambers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 copy_nambers = nambers[:]
 print(copy_nambers)
+
+if age >= 26 :
+    print('loL')
+else:
+    print('KEK')
+
+a = input('Введіть число')
+a = int(a)
+if a > 0:
+    print('Число додатне')
+elif a < 0:
+    print("Число від'ємне")
+else:
+    print('Це число - нуль')
+
+first_name = "Vladyslav"
+last_name = "Hakov"
+full_name = first_name + " " + last_name
+print(full_name)
+
+name: str = "Vlad"
+age: int = 25
+height: float = 1.83
+is_student: bool = True
+has_high_degree: None = None
+
+print(f"Name: {name}, Age: {age}, Height: {height}, Student: {is_student}")
+
+
+fruit = "apple"
+
+print(f"Fruit: {fruit}")
+
+massege = "Name: {}, Age: {}, Height: {}, Student: {}".format(name, age, height, is_student)
+print(f"Massege: {massege}")
+
+width = 10
+height = 5
+
+area = width * height
+perimeter = 2 * (width + height)
+
+print(f"Perimeter: {perimeter}")
+print(f"Area: {area}")
+
+height = int(25.0)
+
+print(type(name), type(age), type(height), type(is_student))
+
+value_one =5
+value_two = 7
+
+print("Equals", value_one == value_two)
+print("Equals", value_one != value_two)
+print("Equals", value_one >= value_two)
+print("Equals", value_one <= value_two)
+print("Equals", value_one < value_two)
+print("Equals", value_one > value_two)
