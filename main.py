@@ -156,3 +156,27 @@ print("Equals", value_one >= value_two)
 print("Equals", value_one <= value_two)
 print("Equals", value_one < value_two)
 print("Equals", value_one > value_two)
+
+sentence_one = "Hello world"
+sentence_two = "Hello " + "world"
+
+print(sentence_one, sentence_two, sep='\n')
+
+print(f"Are sentence equal? {sentence_one == sentence_two}")
+print(f"Are sentence identical? {sentence_one is sentence_two}")
+
+print(f"Path of sentence in memory {id(sentence_one)}")
+print(f"Path of sentence in memory {id(sentence_two)}")
+
+entertaiment = input("Enter entertainment: ")
+print(f"Enter entertainment: {entertaiment}")
+
+FLOORS = 5
+APARTMENTS_PER_FLOOR = 4
+
+apartament_number = int(input("Enter apartament number: "))
+apartament_per_entrance = FLOORS * APARTMENTS_PER_FLOOR
+antrance_number = (apartament_number - 1) // apartament_per_entrance + 1
+floor_number = ((apartament_number - 1) % apartament_per_entrance) // APARTMENTS_PER_FLOOR + 1
+
+print(f"Entrance number: {antrance_number}, floor number: {floor_number}")
