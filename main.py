@@ -353,3 +353,53 @@ circle = {
 }
 print(circle.get((0, 1)))
 
+def print_max(a: int, b: int):
+    if a > b:
+        print(a, "max")
+
+    elif a == b:
+        print(a, "rivne", b)
+
+    else:
+        print(b, "max")
+
+print_max(3, 3)
+
+x = 6
+y = 5
+print_max(x, y)
+
+def add_numbers(num1: int, num2: int) -> int:
+    sum = num1 + num2
+    return sum
+
+result = add_numbers(8.5 , 8.7)
+print(result)
+
+def greet(name: str) -> str:
+    return f"Hello, {name}"
+
+greeting = greet("Vlados")
+print(greeting)
+
+def is_even(num: int) -> bool:
+    return num % 2 == 0
+
+check_even = is_even(5)
+print(check_even)
+
+def modify_string(original: str) -> str:
+    original = "змінено"
+    return original
+
+str_var = "оригінал"
+print(modify_string(str_var))  # виведе: змінено
+print(str_var)                # виведе: оригінал
+
+def modify_list(lst: list) -> None:
+    lst.append(4)
+
+my_list = [1, 2, 3]
+modify_list(my_list)
+print(my_list)  # виведе: [1, 2, 3, 4]
+
